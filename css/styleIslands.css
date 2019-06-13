@@ -1,0 +1,407 @@
+*{
+    padding: 0;
+    margin: 0;
+		box-sizing: border-box;
+		font-family: 'Patua One', cursive;
+		
+}
+.small-window{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background: white;
+	display: none;
+	opacity: 0;
+	z-index: 9999;
+	transition: .2s;
+	padding-top: 45vh;
+}
+.small-window p{
+	text-align: center;
+	color: #8CC7D1;
+}
+
+.all{
+    width: 539vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+		overflow-x: hidden;
+		color: #f6e7c1;
+		background: linear-gradient(to bottom, #E1F3F4 0%,#E1F3F4 52%, rgba(86, 139, 148, 0.77) 52.01%, #8CC7D1 53.2%, #8CC7D1 100%); 
+}
+.intro{
+	width:100vw;
+	height: 100vh;
+	position: relative;
+	text-align: center;
+	color: #fbfcff;
+	overflow-y: hidden;
+}
+#logo{
+	  position: absolute;
+    left: 46vw;
+    bottom: 14vh;
+    width: 9vw;
+    border-radius: 3px;
+		cursor: pointer;
+		transition: .3s;
+		}
+.hide{
+	display: none;
+}
+.intro h1{
+	padding-top: .5%;
+	margin-top: 16vh;
+	font-size: 5em;
+	letter-spacing: .05em;
+	margin-bottom: 7vh;
+	width: 75%;
+	height: 25%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../png/banner.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.intro h2{
+	color: white;
+  letter-spacing: 2px;
+  margin-top: 10vh;
+  font-weight: 100
+}
+.intro h4{
+	position: absolute;
+  top: 56vh;
+  left: 3.1vw;
+  height: 10vh;
+  width: 27vw;
+  background-image: url(../png/small_banner.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-weight: 100;
+  font-size: 4vh;
+  padding-top: .5vh;
+}
+.intro h4.video{
+	left: 3.1vw;
+}
+.intro h4.documentation{
+	left: 69vw;
+}
+.intro iframe{
+	position: absolute;
+	top: 65vh;
+	left:3.5vw;
+}
+.intro ul{
+    position: absolute;
+    top: 66vh;
+    left: 73.5vw;
+    font-weight: 100;
+    font-size: 4vh;
+    padding-top: .5vh;
+    text-align: left;
+}
+.intro ul a{
+	text-decoration: none;
+	color: white;
+}
+.intro img{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	bottom: 0;
+	left: 0;
+}
+.fa.scroll-indicator {	
+	position: absolute;
+	left:49.5vw;
+	margin-top: 75vh;
+	font-size: 5vh;
+	
+	-webkit-animation: bounce 1s infinite; 
+	animation: bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+	 0% { top: 15%; }
+	 50%   { top: 17%; }
+	 100% { top: 15%; }
+}
+
+@keyframes bounce {
+	 0% { top: 15%; }
+	 50%   { top: 17%; }
+	 100% { top: 15%; }
+}
+.islands{
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-y: hidden;
+}
+.bigwrapper{
+	width: 80vw;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	overflow-y: hidden;
+	
+/*	how does this width work responsively??*/
+}
+.bigwrapper.supermarket{
+	padding-left: 6%;
+	width: 100vw;
+}
+.bigwrapper.supermarket img{
+	right:2%;
+}
+.bigwrapper.sea{
+	width: 100vw;
+}
+.bigwrapper.farm{
+	width: 70vw;
+}
+.bigwrapper.school{
+	width: 70vw;
+}
+.wrapper{
+	margin-top: 6vh;
+	margin-right: 2vh;
+}
+.wrapper.one{
+	-webkit-animation: floaty 5s infinite; 
+	animation: floaty 5s infinite ease-in-out;
+	transform-style: preserve-3d;
+	
+}
+@-webkit-keyframes floaty {
+	 0% { }
+	 50%   { transform: translate(0,7px); }
+	 100% {  }
+	
+}
+
+@keyframes floaty {
+	  0% { }
+	 50%   { transform: translate(0,7px); transform: translateZ(22)}
+	 100% {  }
+}
+.wrapper.one{
+	width: 50%;
+}
+.wrapper.two{
+	width: 46%;
+	margin-top: 6vh;
+}
+.supermarket .wrapper.two{
+	width:45%;
+}
+.sea .wrapper.one{
+	width: 65%;
+	animation: none;
+	transform-style: flat;
+}
+.sea .wrapper.two{
+	width: 30%
+}
+.sea .box.image img{
+	right: 0;
+}
+.sea .box.text{
+	padding-top: 23%;
+}
+.farm .wrapper.one{
+	width: 50%;
+}
+.farm .wrapper.two{
+	width: 46%;
+}
+.box{
+    width:100%;
+    height: 40vh;
+		margin-bottom:7vh;
+		position: relative;
+}
+.box.image img{
+	position: absolute;
+	height: 90%;
+	bottom:0;
+	z-index: 3;
+}
+.box.image.waves img.front{
+	bottom:6%;
+	height: 25%;
+	width: 100%;
+	z-index: 6;
+}
+.mask{
+	position: absolute;
+	width:100%;
+	background: #8CC7D1;
+	height:35%;
+	bottom: -20%;
+	z-index: 5;
+}
+.box.image.waves img.back{
+	bottom:6%;
+	height: 39%;
+	width: 100%;
+	z-index: -1;
+}
+
+.box.text{
+	text-align: left;
+	font-size: 1.3em; 
+	padding-top: 15%;
+	padding-bottom: 20%;
+	opacity: 0;
+	transition: .3s;
+	
+}
+.supermarket .box.text{
+	padding-top: 8%;
+}
+.school .box.text{
+	padding-top:20%
+}
+.box.text h3{
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.box.text p{
+	width: 80%;
+	margin: auto;
+	background:white;
+	border-radius: 2px;
+	padding: 1em;
+	color: #222222;
+}
+.wrapper.two .box.text:nth-of-type(2) p{
+	background: #222222;
+	color: #f6f4d2;
+	border-radius: 3px;
+	
+}
+
+.last{
+	height: 100%;
+	background-color: #222222;
+	width: 99vw;
+	
+}
+.last .data{
+	width:100vw;
+	
+	height: 100vh;
+}
+.banana{
+    height: 100px;
+    width: 120px;/*dont forget to change bananaLocation calculation*/
+    
+    position: fixed;
+    left: 40%;
+    z-index: -1;
+    transition: all .2s;
+		opacity: 0;
+		
+}
+#bananaTop{
+	top:22%;
+	background-image: url(../png/fairtrade-%20banana-noshadow.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#bananaBottom{
+	top:69%;
+	background-image: url(../png/commercial%20banana%20no%20shadow%20.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.bananaCrate{
+	width:120px;
+	height: 120px;
+	position: absolute;
+	z-index: 0;
+	left: 137vw;
+	transition: top .2s;
+}
+.bananaCrate img{
+	width: 100%;
+}
+.bananaCrate.top{
+	top:20%;
+}
+.bananaCrate.bottom{
+	top:67%;
+}
+.bananaCrate.sticky {
+		position: fixed;
+    left: 40%;
+    margin-left: 0;
+    z-index: 0;
+   
+}
+.boat{
+	width:320px;
+	height: 200px;
+	position: absolute;
+	left: 202vw;
+	z-index: 3;
+}
+#ship{
+	top:17%;
+	background-image: url(../png/boat.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#submarine{
+	top: 60%;
+	background-image: url(../png/submarine_reflect.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	transition: top .2s linear;
+}
+.boat.sticky{
+	position: fixed;
+    left: 39.7%;
+    margin-left: 0;
+    z-index: 3;
+}
+@media screen and (max-width:1150px){
+	.small-window{
+		opacity:1;
+		display: block;
+	}
+	.small-window .mobile{
+		opacity:0;
+		display: none;
+	}
+	.small-window .desktop{
+		opacity:1;
+		display: block;
+	}
+}
+@media screen and (max-width:450px){
+	.small-window{
+		opacity:1;
+		display: block;
+	}
+	.small-window .mobile{
+		opacity:1;
+		display: block;
+	}
+	.small-window .desktop{
+		opacity:0;
+		display: none;
+	}
+}
+/*good width for a floating element*/
+/*
+.section {
+	background:#abc0e3;
+}
+.section:nth-child(even){
+	background:blue;
+}*/

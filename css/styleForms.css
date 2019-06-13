@@ -1,0 +1,129 @@
+.last .image{
+	height: 100vh;
+}
+
+.forms{
+	transition: .3s;
+}
+.last h2{
+	color:white;
+	margin: auto;
+	margin-top: 7vh;
+	margin-bottom: 5vh;
+	max-width: 80%;
+	text-align: center;
+	
+	font-size: 7vh;
+}
+.forms p{
+	margin-bottom: 2vh;
+}
+#submitGuess{
+	  font-size: 4vh;
+    margin: auto;
+    width: 17vw;
+	
+}
+#submitGuess input{
+	width: 100%;
+	height: 2em;
+	text-align: center;
+	font-size: .9em;
+	border-radius: 3px;
+	border: none;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: .5em;
+}
+#submitGuess input[name=priceguess] {
+        width: 5vw;
+    /* min-width: 70px; */
+    margin-bottom: 1vh;
+    margin-left: 18%;
+    margin-top: 4vh;
+    position: absolute;
+    top: 35.5vh;
+    right: 77vw;
+    background: transparent;
+    border-bottom: solid 2px white;
+    color: #f6e7c1;
+    font-size: 5vh;
+    height: 8vh;
+}
+#submitGuess input[type=submit]{
+	margin-left: 4%;
+	margin-top: 2.7em;
+	width: 100%;
+}
+#submitGuess input[type=submit]:hover{
+	background-color:#cdd42a;
+	cursor: pointer;
+}
+#data{
+	display: none;
+}
+#guess img{
+	width: 35%;
+	height: 100%;
+}
+#guess p{
+	font-size: 5vh;
+  position: absolute;
+  right: 72vw;
+  top: 40vh;
+}
+#guess p:nth-of-type(2){
+  right: 26vw;
+}
+.input-wrapper{
+	display: flex;
+	width: 60vw;
+	height: 10vh;
+}
+.banana-wrapper{
+	margin-top: 12vh;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-between;
+	width: 70vw;
+	height:40vh;
+}
+#data .datap{
+	  font-size: 4vh;
+    max-width: 35vw;
+    margin-left: 7vw;
+    margin-top: 2vh;
+}
+#data .datap:nth-of-type(1){
+	margin-top: 11vh;
+}
+#data .datap:nth-of-type(3){
+	color: #cdd42a;
+}
+#data span{
+	color: #cdd42a;
+}
+.data-text{
+	
+	
+}
+#logolast{
+	width: 11vw;
+  border-radius: 3px;
+  margin-left: 11vw;
+  margin-top: 5vh;
+}
+p.social-media{
+    font-size: 4.5vh;
+    position: absolute;
+    color: #cdd42a;
+    right: 16vw;
+    bottom: 16.5vh;
+}
+img.social-media{
+    position: absolute;
+    right: 6vw;
+    bottom: 17vh;
+    width: 17vh
+}
